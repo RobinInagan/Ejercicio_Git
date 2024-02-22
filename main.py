@@ -21,7 +21,7 @@ if(1 == option):
         a=int(input(f'\n\n_Ingrese los valores a Sumar \n----> a = '))
         b=int(input('\n----> b = '))
 
-        print(f'\nLa suma de {a}+{b} es igual a: {a+b}')
+        print(f'\nLa suma de {a}+{b} es igual a: {suma(a,b)}')
     except ValueError:
             input('Error, valor ingresado o valido \nPresione ENTER para continuar ...')
 if(2 == option):
@@ -29,14 +29,14 @@ if(2 == option):
         a=int(input(f'\n\n_Ingrese los valores a Restar \n----> a = '))
         b=int(input('\n----> b = '))
 
-        print(f'\nLa resta de {a}-{b} es igual a: {a-b}')
+        print(f'\nLa resta de {a}-{b} es igual a: {resta(a,b)}')
     except ValueError:
             input('Error, valor ingresado o valido \nPresione ENTER para continuar ...')     
 if(3 == option):
     try:
         a=int(input(f'\n\n_Ingrese los valores a Dividir \n----> a = '))
         b=int(input('\n----> b = '))
-        print(f'\nLa división de {a}/{b} es igual a: {a/b}')
+        print(f'\nLa división de {a}/{b} es igual a: {division(a,b)}')
     except ValueError:
             input('Error, valor ingresado o valido \nPresione ENTER para continuar ...')
     except ZeroDivisionError:
